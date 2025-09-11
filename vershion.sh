@@ -7,3 +7,4 @@ echo "[INFO] NPM (via NVM): $(npm -v)"
 echo "[INFO] NVM version: $(nvm --version)"
 echo "[INFO] MongoDB server: $(mongod --version | head -n 1)"
 echo "[INFO] Mongo Shell: $(mongosh --version || echo 'mongosh not installed')"
+sudo systemctl status mongod
