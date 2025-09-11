@@ -1,5 +1,3 @@
- cat /var/log/user-data.log
-
 echo "[INFO] OS: $(lsb_release -d | cut -f2)"
 echo "[INFO] Kernel: $(uname -r)"
 echo "[INFO] Node.js (system): $(/usr/bin/node -v || echo 'Not installed')"
