@@ -1,0 +1,11 @@
+ cat /var/log/user-data.log
+
+echo "[INFO] OS: $(lsb_release -d | cut -f2)"
+echo "[INFO] Kernel: $(uname -r)"
+echo "[INFO] Node.js (system): $(/usr/bin/node -v || echo 'Not installed')"
+echo "[INFO] NPM (system): $(/usr/bin/npm -v || echo 'Not installed')"
+echo "[INFO] Node.js (via NVM): $(node -v)"
+echo "[INFO] NPM (via NVM): $(npm -v)"
+echo "[INFO] NVM version: $(nvm --version)"
+echo "[INFO] MongoDB server: $(mongod --version | head -n 1)"
+echo "[INFO] Mongo Shell: $(mongosh --version || echo 'mongosh not installed')"
